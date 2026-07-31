@@ -1,11 +1,11 @@
 
 
-#include "Core/Application.hpp"
-#include "Core/Layer.hpp"
+#include "core/Application.hpp"
+#include "core/Layer.hpp"
 
 class NNVisualizer : public Application {
 public:
-  NNVisualizer()::m_nn_visualizer(Layer{}) {}
+  NNVisualizer() : m_nn_visualizer(Layer{}) {}
   virtual ~NNVisualizer() {}
 
   virtual void on_create() override { m_nn_visualizer.on_attach(); }

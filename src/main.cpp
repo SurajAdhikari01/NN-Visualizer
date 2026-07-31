@@ -1,6 +1,8 @@
-#include <iostream>
+#include "core/Application.hpp"
 
 int main() {
-  std::cout << "Hello world!" << std::endl;
+  auto *app = create_application();
+  app->run();
+  delete app;
   return 0;
 }

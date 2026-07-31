@@ -10,6 +10,6 @@ void Layer::on_detach() { CloseWindow(); }
 void Layer::on_update() {}
 void Layer::on_draw() {
   BeginDrawing();
-  ClearBackgorund(WHITE);
+  ClearBackground(WHITE);
   EndDrawing();
 }
