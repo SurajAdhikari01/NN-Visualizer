@@ -1,4 +1,5 @@
-#include "core/Layer.hpp"
+#include "Core/Layer.hpp"
+
 #include <raylib.h>
 
 Layer::Layer() { ChangeDirectory(GetApplicationDirectory()); }
@@ -10,6 +11,6 @@ void Layer::on_detach() { CloseWindow(); }
 void Layer::on_update() {}
 void Layer::on_draw() {
   BeginDrawing();
-  ClearBackground(WHITE);
+  ClearBackground(BLACK);
   EndDrawing();
 }

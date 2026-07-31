@@ -1,7 +1,7 @@
-#include "core/Application.hpp"
+#include "Core/Application.hpp"
 
 int main() {
-  auto *app = create_application();
+  auto* app = create_application();
   app->run();
   delete app;
   return 0;

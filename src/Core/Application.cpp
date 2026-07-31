@@ -1,4 +1,5 @@
-#include "core/Application.hpp"
+#include "Core/Application.hpp"
+
 #include <raylib.h>
 Application::Application() {}
 Application::~Application() {}
