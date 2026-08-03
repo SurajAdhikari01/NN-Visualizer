@@ -5,7 +5,10 @@
 Layer::Layer() { ChangeDirectory(GetApplicationDirectory()); }
 Layer::~Layer() {}
 
-void Layer::on_attach() { InitWindow(1289, 720, "NN-VISUALIZER"); }
+void Layer::on_attach() {
+  InitWindow(1289, 720, "NN-VISUALIZER");
+  SetTargetFPS(60);
+}
 void Layer::on_detach() { CloseWindow(); }
 
 void Layer::on_update() {}
